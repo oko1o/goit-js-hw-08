@@ -86,11 +86,6 @@ galleryEl.insertAdjacentHTML("afterbegin", galleryMarkup);
 galleryEl.addEventListener("click", (event) => {
   if (event.target !== event.currentTarget) {
     event.preventDefault();
-  }
-});
-
-galleryEl.addEventListener("click", (event) => {
-  if (event.target !== event.currentTarget) {
     const bigImgUrl = event.target.dataset.source;
 
     basicLightbox
